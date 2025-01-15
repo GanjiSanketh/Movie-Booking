@@ -1,0 +1,100 @@
+/* Global Styles */
+html, body {
+    height: 100%; /* Ensure the full height is used */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Card Styling */
+.card {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px; /* Add some padding to prevent the content from touching the edges */
+}
+
+/* Card Body */
+.card-body {
+    padding: 30px;
+}
+
+/* Header Styling */
+.card-body .row h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.card-body .row .col-md-4 {
+    margin-bottom: 20px;
+}
+
+/* Input Fields Styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-color: #f76c6c; /* A light red color to match movie theme */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 108, 108, 0.3);
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f76c6c; /* Movie themed color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65c5c; /* Darker shade on hover */
+}
+
+/* Register Text */
+.card-body p {
+    font-size: 14px;
+    color: #777;
+}
+
+.card-body a {
+    color: #f76c6c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .card {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .card-body .row .col-md-4 {
+        width: 100%;
+    }
+}
