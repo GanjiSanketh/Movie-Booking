@@ -1,38 +1,28 @@
-<div class="row">
-    <div class="col-md-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <h3>Login</h3>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>Mobile number </label>
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>Password </label>
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4" (click)="onSubmit()">
-                        <button>Submit</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <p>Do not have account?</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="" (click)="register()">Click here to register</a>
-                    </div>
-                </div>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <h2>Login</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Mobile number</label>
+                <input type="text">
             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Password</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <button>Submit</button>
+        </div>
+        <div class="row">
+            <p>Already have account?</p>
+        </div>
+        <div class="row">
+            <p>Click here to <a href="" (click)="onRegister()">register</a></p>
         </div>
     </div>
 </div>
